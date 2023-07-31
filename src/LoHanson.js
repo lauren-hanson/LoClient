@@ -4,7 +4,7 @@ import './LoHanson.css';
 function LoHanson() {
   return (
     <div className="LoHanson">
-      
+      <h3>Lo Hanson Portfolio</h3>
     </div>
   );
 }
