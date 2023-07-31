@@ -2,6 +2,6 @@
 export const Footer = () => { 
 
     return(<>
-        <h2>Footer Page</h2>
+        <h2>Footer</h2>
     </>)
 }
