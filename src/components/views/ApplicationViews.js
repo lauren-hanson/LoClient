@@ -1,31 +1,32 @@
 import { Route, Routes } from "react-router-dom"
-import { Home } from "../components/home/Home"
-import { Work } from "../components/work/Work"
-import { About } from "../components/about/About"
-import { ContactForm } from "../components/contact/ContactForm"
-import { NavBar } from "../components/nav/NavBar"
-import { Footer } from "../components/footer/Footer"
+import { Home } from "../home/Home"
+// import { About } from "../about/About"
+// import { Work } from "../work/Work"
+// import { Contact } from "../contact/Contact"
+import { Footer } from "../footer/Footer"
 
-export const ApplicationViews = ({ token, setToken }) => {
+export const ApplicationViews = () => {
     return (
         <>
-            <NavBar />
+
             <Routes>
+
                 <Route path="/">
                     <Route index element={<Home />} />
+                </Route>
+                {/* Add Routes here */}
+                {/* <Route path="/about">
+                    <Route index element={<About />} />
                 </Route>
 
                 <Route path="/work">
                     <Route index element={<Work />} />
-                </Route>
 
-                <Route path="/about">
-                    <Route index element={<About />} />
                 </Route>
 
                 <Route path="/contact">
-                    <Route index element={<ContactForm />} />
-                </Route>
+                    <Route index element={<Contact />} />
+                </Route> */}
 
             </Routes>
             <Footer />
