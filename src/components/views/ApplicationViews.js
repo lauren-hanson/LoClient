@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom"
 import { Home } from "../home/Home"
-import { About } from "../about/About"
-import { Work } from "../work/Work"
-import { Contact } from "../contact/Contact"
+// import { About } from "../about/About"
+// import { Work } from "../work/Work"
+// import { Contact } from "../contact/Contact"
 import { Footer } from "../footer/Footer"
 
 export const ApplicationViews = () => {
@@ -15,7 +15,7 @@ export const ApplicationViews = () => {
                     <Route index element={<Home />} />
                 </Route>
                 {/* Add Routes here */}
-                <Route path="/about">
+                {/* <Route path="/about">
                     <Route index element={<About />} />
                 </Route>
 
@@ -26,7 +26,7 @@ export const ApplicationViews = () => {
 
                 <Route path="/contact">
                     <Route index element={<Contact />} />
-                </Route>
+                </Route> */}
 
             </Routes>
             <Footer />

@@ -1,7 +1,14 @@
+import "./Footer.css"
 
-export const Footer = () => { 
+export const Footer = () => {
 
-    return(<>
-        <h2>Footer</h2>
+    return (<>
+        <div className="footer">
+            <div className="footerFlex">
+                <p>nashville</p>
+                <p>logo</p>
+                <a href="https://www.instagram.com/markrickorsteve/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="blank">instagram</a>
+            </div>
+        </div>
     </>)
 }

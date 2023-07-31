@@ -31,10 +31,10 @@ export const NavBar = () => {
             aria-label="main navigation"
         >
             <div className="navbar-brand">
-                {/* <a className="navbar-item" href="/">
-                    <img src={Logo} height="3rem" alt="Rare Logo" />{" "}
+                <a className="navbar-item" href="/">
+                    {/* <img src={Logo} height="3rem" alt="Rare Logo" />{" "} */}
                     <h1 class="title is-3" className="rareHeader">Lo Hanson</h1>
-                </a> */}
+                </a>
                 <a
                     role="button"
                     className="navbar-burger"
@@ -60,7 +60,7 @@ export const NavBar = () => {
                         About
                     </Link>
                     <span className="padding">/</span>
-                    <Link to="/Contact" className="navbar-item">
+                    <Link to="/contact" className="navbar-item">
                         Contact
                     </Link>
                 </div>
