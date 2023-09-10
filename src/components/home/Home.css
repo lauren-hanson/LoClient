@@ -112,3 +112,27 @@
 .slideshowDot.active {
     background-color: #2e252c;
 }
+
+.typewriter-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .typewriter-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .typewriter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #131313;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }

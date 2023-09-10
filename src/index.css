@@ -1,5 +1,19 @@
 @import 'bulma/css/bulma.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+@media screen and (min-width: 480px) {
+    body {
+        /* font-family: 'Lora', serif;
+        ; */
+        font-family: 'Quicksand', sans-serif;
+        margin: 0; 
+        padding: 0; 
+        background-color: #fafafa;
+    }
+
+}
+
 a {
   color: #309875;
 }
@@ -13,6 +27,7 @@ html,
 body {
   background-color: #131313;
   color: #cccccc;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .subtitle.is-small {
@@ -53,4 +68,12 @@ a.navbar-item.is-active,
 
 .navbar-menu, .navbar-brand, .navbar-start, .navbar-menu.is-active {
   background-color: #131313;
+}
+
+a.navbar-item { 
+  color: #ffffff; 
+}
+
+a.navbar-item:hover { 
+  color: #309875;
 }
