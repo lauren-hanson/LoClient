@@ -33,7 +33,7 @@ export const NavBar = () => {
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
                     {/* <img src={Logo} height="3rem" alt="Rare Logo" />{" "} */}
-                    <h1 class="title is-3" className="rareHeader">Lo Hanson</h1>
+                    <h1 className="title is-3 loHeader" >Lauren Hanson</h1>
                 </a>
                 <a
                     role="button"
@@ -55,11 +55,11 @@ export const NavBar = () => {
                     <Link to="/work" className="navbar-item ">
                         Work
                     </Link>
-                    <span className="padding">/</span>
+                    {/* <span className="padding">/</span> */}
                     <Link to="/about" className="navbar-item">
                         About
                     </Link>
-                    <span className="padding">/</span>
+                    {/* <span className="padding">/</span> */}
                     <Link to="/contact" className="navbar-item">
                         Contact
                     </Link>
