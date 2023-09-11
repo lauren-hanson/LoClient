@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import logo from "../../assets/homepagelogo.png"
+import "./Home.css"
 
 export const Typewriter = ({ text, typingSpeed }) => {
 
@@ -22,7 +23,7 @@ export const Typewriter = ({ text, typingSpeed }) => {
     return (<>
         <div
             className='typewriter-container'>
-            <img src={logo} alt='homepage logo' />
+            <img src={logo} alt='homepage logo' className='homepageLogo'/>
             <div
                 className='typewriter-text'>
                 {displayText}

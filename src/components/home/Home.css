@@ -116,14 +116,14 @@
 .typewriter-container {
     position: relative;
     width: 100%;
-  }
-  
-  .typewriter-container img {
+}
+
+.typewriter-container img {
     width: 100%;
     height: auto;
-  }
-  
-  .typewriter-text {
+}
+
+.typewriter-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,4 +135,8 @@
     padding: 10px 20px;
     border-radius: 5px;
     white-space: nowrap;
-  }
+}
+
+img.homepageLogo {
+   width: 40rem;
+}
