@@ -1,0 +1,13 @@
+.workTiles { 
+    border: 1px solid #ffffff; 
+    width: 15rem; 
+    height: 15rem; 
+    margin: 1rem; 
+}
+
+.myWork { 
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center;
+    padding: 2rem; 
+}
