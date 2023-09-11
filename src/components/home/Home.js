@@ -2,6 +2,7 @@ import { HomeReel } from "./HomeReel"
 
 import "./Home.css"
 import { Typewriter } from "./Typewriter"
+import { Work } from "../work/Work"
 
 export const Home = () => {
 
@@ -15,6 +16,7 @@ export const Home = () => {
                 </div> */}
               
                 <Typewriter text="Web Developer & Photographer" typingSpeed={100}/> 
+                <Work /> 
 
 
                 {/* <div className="paragraph">

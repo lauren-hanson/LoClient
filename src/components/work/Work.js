@@ -1,6 +1,17 @@
-export const Work = () => { 
+import "./Work.css"
 
-    return(<>
-        <h2>Work Page</h2>
+export const Work = () => {
+
+    return (<>
+        <h3>My Work</h3>
+        <div className='myWork'>
+            <div className='workTiles'></div>
+            <div className='workTiles'></div>
+            <div className='workTiles'></div>
+            <div className='workTiles'></div>
+            <div className='workTiles'></div>
+            <div className='workTiles'></div>
+        </div>
+
     </>)
 }
