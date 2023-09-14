@@ -1,0 +1,279 @@
+
+.container{ 
+    display: flex; 
+    flex-flow: row wrap; 
+}
+
+.laptop_container {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 8%;
+    width: 600px;
+    height: 420px;
+    background: none;
+    
+}
+
+.laptop_screen {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 400px;
+    background: transparent;
+    /* background: #f9f3e8; */
+    border: 8px solid #797878;
+    border-radius: 2%; 
+}
+
+.keyboard {
+    display: inline-block;
+    position: absolute;
+    border-radius: 4%; 
+    top: 420px;
+    left: 5px;
+    height: 125px;
+    width: 98%;
+    padding: 10px;
+    /* background: #ff0;  */
+
+}
+
+/* .row {
+    display: flex;
+    transform: skewX(330deg);
+}
+
+.key {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    margin: 2px;
+    font-family: Arial, sans-serif;
+    z-index: 1; 
+    transform: skew(-5deg, 100);
+    z-index: +1; 
+} */
+
+.keyboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 125%;
+    background: #333;
+    transform: skewX(330deg);
+}
+
+.keyboard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 125%;
+    background: #333;
+    transform: skewX(30deg);
+}
+
+/* TEA CUP */
+
+.cup_container {
+    position: relative;
+    top: 50px;
+
+}
+
+.cup {
+    position: relative;
+    width: 140px;
+    height: 150px;
+    top: 375px; 
+    left: 110px; 
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    /* creates curves on bottom of cup */
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.top {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+}
+
+.circle {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 40px;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    /* when tea image is moved down slightly, this will hide the extra part of the image */
+    overflow: hidden;
+}
+
+.coffee {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#58382d, #341e16);
+    border-radius: 50%;
+}
+
+.handle {
+    position: absolute;
+    right: -35px;
+    top: 10px;
+    width: 80px;
+    height: 90px;
+    border: 15px solid #dcdcdc;
+    /* creates opening on left side */
+    border-left: 15px solid transparent;
+    /* creates opening on bottom */
+    border-bottom: 15px solid transparent;
+    border-radius: 50%;
+    transform: rotate(42deg);
+}
+/* 
+.plate {
+    position: absolute;
+    bottom: -50px;
+    left: 127%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+} */
+
+/* .plate {
+    position: absolute;
+    bottom: -50px;
+    left: 127%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-radius: 50%;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+
+.plate::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+}
+
+.plate::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+    border-radius: 50%;
+} */
+
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.vapour span {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 10px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(8px);
+    animation-delay: calc(var(--i) * -0.5s);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-25px) scaleX(5);
+    }
+
+    95% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(-100px) scaleX(10);
+    }
+}
+
+.camera_container {
+    position: relative;
+    /* top: 50px; */
+
+}
+
+.camera { 
+    position: relative;
+    top: 28rem; 
+    left: -10rem; 
+    width: 170px;
+    height: 125px;
+    background: #565555;
+    border-radius: 7%; 
+
+}
+
+.shutter { 
+    position: absolute; 
+    top: -15px; 
+    left: 30px; 
+    width: 30px; 
+    height: 15px; 
+    background: black; 
+    border-radius: 7%; 
+}
+
+
+.lens { 
+    position: relative; 
+    top: 25%;
+    left: 33%; 
+    width: 65px; 
+    height: 65px; 
+    background: black;
+    border: 3px solid white;  
+    border-radius: 50%; 
+}

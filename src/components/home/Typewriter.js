@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import {Animation} from "./Animation"
 import logo from "../../assets/homepagelogo.png"
 import "./Home.css"
 
@@ -19,11 +20,11 @@ export const Typewriter = ({ text, typingSpeed }) => {
         return () => clearInterval(typingInterval);
     }, [currentIndex, text, typingSpeed]);
 
-
     return (<>
         <div
             className='typewriter-container'>
-            <img src={logo} alt='homepage logo' className='homepageLogo'/>
+            {/* <img src={logo} alt='homepage logo' className='homepageLogo'/> */}
+            <Animation /> 
             <div
                 className='typewriter-text'>
                 {displayText}
