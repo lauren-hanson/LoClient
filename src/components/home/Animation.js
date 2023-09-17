@@ -27,11 +27,11 @@ export const Animation = () => {
 
             </div>
             <div className="laptop_container">
-                <div className="laptop_screen"></div>
-                <div className="keyboard">
-                    <div className="row">
+                <div className="laptop_screen">
+                    {/* <div className="keyboard">
+                        <div className="row"> */}
 
-                        {/* <div className="key"></div>
+                            {/* <div className="key"></div>
                             <div className="key"></div>
                             <div className="key"></div>
                             <div className="key"></div>
@@ -41,7 +41,8 @@ export const Animation = () => {
                             <div className="key"></div>
                             <div className="key"></div>
                             <div className="key"></div> */}
-                    </div>
+                        {/* </div>
+                    </div> */}
                 </div>
             </div>
             <div className='cup_container'>
