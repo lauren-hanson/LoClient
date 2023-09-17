@@ -125,16 +125,18 @@
 
 .typewriter-text {
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
     color: white;
-    background-color: #131313;
-    padding: 10px 20px;
+    background-color: transparent;
+    padding: 10px;
     border-radius: 5px;
     white-space: nowrap;
+    line-break: normal;
+    min-width: 400px; 
 }
 
 img.homepageLogo {
