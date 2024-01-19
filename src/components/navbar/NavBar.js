@@ -33,7 +33,7 @@ export const NavBar = () => {
             <div className="navbar-brand">
                 <a className="navbar-item" href="/">
                     {/* <img src={Logo} height="3rem" alt="Rare Logo" />{" "} */}
-                    <h1 className="title is-3 loHeader" >Lauren Hanson</h1>
+                    <h1 className="title is-3 loHeader" >Lo Hanson</h1>
                 </a>
                 <a
                     role="button"
@@ -64,7 +64,6 @@ export const NavBar = () => {
                         Contact
                     </Link>
                 </div>
-
                 {/* <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
